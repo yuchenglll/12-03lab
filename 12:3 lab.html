@@ -7,7 +7,7 @@
 </head>
 <body>
 <script type="text/javascript">
-	var n = Math.floor(Math.random()*100)+1;  
+	var n = Math.floor(Math.random()*10)+1;  
 var num = 0;                       
 
 num = prompt("請輸入數字:", "");
@@ -20,10 +20,10 @@ document.write("答對了，"+ n +".");
 }
 for (var i=1; i<=num; i++)  {  
 if(num>n) {
-num = prompt("你輸入"+ num +"太高了，請在輸入:(1-100)之間", "");
+num = prompt("你輸入"+ num +"太高了，請在輸入:(1-10)之間", "");
 continue;
 } else if (num<n) {
-num = prompt("你輸入"+ num +"太低了，請在輸入:(1-100)之間", "");
+num = prompt("你輸入"+ num +"太低了，請在輸入:(1-10)之間", "");
 continue;
 } else if (num == n) {
 document.write("答對了，"+ n +".<br />");
