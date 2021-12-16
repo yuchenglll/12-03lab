@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var n = Math.floor(Math.random()*100)+1;  
+var num = 0;                       
+
+num = prompt("請輸入數字:", "");
+
+if (num == null || num == n)  
+ if(num==null) {
+document.write("你沒有輸入，答案是"+ n +".");
+} else {
+document.write("答對了，"+ n +".");
+}
+for (var i=1; i<=num; i++)  {  
+if(num>n) {
+num = prompt("你輸入"+ num +"太高了，請在輸入:(1-100)之間", "");
+continue;
+} else if (num<n) {
+num = prompt("你輸入"+ num +"太低了，請在輸入:(1-100)之間", "");
+continue;
+} else if (num == n) {
+document.write("答對了，"+ n +".<br />");
+break;
+} else {
+document.write("你放棄了，答案是"+ n +".");
+break;
+  }
+}
+document.write("恭喜你，共猜"+ i +"次"); 
+</script>
+</body>
+</html>
